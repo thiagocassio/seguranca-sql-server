@@ -144,6 +144,70 @@ Login existe, mas não acessa o banco.
 
 ##
 
+## 1.5 Auditoria
+
+### Como ver acessos atuais
+Se o login estiver conectado agora, você consegue ver por:
+
+```sql
+SELECT 
+    login_name,
+    login_time,
+    host_name,
+    program_name,
+    session_id
+FROM sys.dm_exec_sessions
+WHERE is_user_process = 1;
+```
+Aqui:
+
+- login_time = hora em que a sessão atual foi aberta
+- só mostra sessões ativas
+- não serve como histórico permanente
+
+##
+
+### Como descobrir “último acesso”
+Error Log (mais simples)
+```sql
+EXEC xp_readerrorlog 0, 1, N'Login succeeded';
+```
+##
+
+### Detectar contas órfãs
+```sql
+SELECT 
+    dp.name AS usuario_orfao,
+    dp.type_desc,
+    dp.sid
+FROM sys.database_principals dp
+LEFT JOIN sys.server_principals sp
+    ON dp.sid = sp.sid
+WHERE sp.sid IS NULL
+  AND dp.authentication_type_desc = 'INSTANCE'
+  AND dp.name NOT IN ('dbo','guest','INFORMATION_SCHEMA','sys');
+```
+
+##
+
+### Extended Events (melhor prática)
+Capturar evento de login e salvar em arquivo.
+
+Ideal para:
+- logins sem uso há 90 dias
+- contas órfãs
+- detectar contas de aplicação esquecidas
+- auditoria ISO 27001
+- revisão trimestral de acessos
+
+##
+
+### SQL Server Audit
+
+Melhor para compliance e evidência formal.
+
+##
+
 ## Resumo
 
 * preferir Windows Authentication
