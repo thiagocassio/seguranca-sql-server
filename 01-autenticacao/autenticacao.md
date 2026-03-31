@@ -4,7 +4,6 @@
 
 Define como o usuário prova identidade ao conectar no SQL Server.
 
-##
 
 ## 1.1 Modos de Autenticação
 
