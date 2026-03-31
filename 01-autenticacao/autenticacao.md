@@ -5,9 +5,9 @@
 Define como o usuário prova identidade ao conectar no SQL Server.
 
 
-- ## 1.1 Modos de Autenticação
+## 1.1 Modos de Autenticação
 
-- ### Windows Authentication (RECOMENDADO)
+### Windows Authentication (RECOMENDADO)
 
 * usa usuário do Windows / AD
 * autenticação via Kerberos/NTLM
@@ -173,6 +173,16 @@ Error Log (mais simples)
 EXEC xp_readerrorlog 0, 1, N'Login succeeded';
 ```
 
+### Tentativas falhas
+```sql
+EXEC xp_readerrorlog 0, 1, N'Login failed';
+```
+Detecta:
+- brute force
+- senha expirada
+- app com senha antiga
+- login órfão
+- ataque extero
 
 ### Detectar contas órfãs
 ```sql
