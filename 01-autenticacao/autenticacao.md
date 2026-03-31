@@ -5,9 +5,9 @@
 Define como o usuário prova identidade ao conectar no SQL Server.
 
 
-## 1.1 Modos de Autenticação
+## - 1.1 Modos de Autenticação
 
-### Windows Authentication (RECOMENDADO)
+### - Windows Authentication (RECOMENDADO)
 
 * usa usuário do Windows / AD
 * autenticação via Kerberos/NTLM
