@@ -165,14 +165,14 @@ Aqui:
 - só mostra sessões ativas
 - não serve como histórico permanente
 
-##
+
 
 ### Como descobrir “último acesso”
 Error Log (mais simples)
 ```sql
 EXEC xp_readerrorlog 0, 1, N'Login succeeded';
 ```
-##
+
 
 ### Detectar contas órfãs
 ```sql
