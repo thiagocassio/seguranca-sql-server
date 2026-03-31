@@ -35,7 +35,7 @@ README.md
 
 # Conteúdo por Tópico
 
-## 01 — Autenticação
+## [01 — Autenticação](01-autenticacao/autenticacao.md)
 
 * Windows Authentication
 * SQL Login
@@ -45,7 +45,7 @@ README.md
 * mapeamento login → user
 * validação com `EXECUTE AS`
 
-## 02 — Autorização
+## [02 — Autorização](02-autorizacao/autorizacao.md)
 
 * GRANT / DENY / REVOKE
 * permissões por escopo
@@ -54,7 +54,7 @@ README.md
 * permissões efetivas
 * least privilege
 
-## 03 — Criptografia
+## [03 — Criptografia](03-criptografia/criptografia.md)
 
 * TDE
 * TLS
@@ -63,7 +63,7 @@ README.md
 * hierarquia de chaves
 * backup de certificados
 
-## 04 — Proteção de Dados
+## [04 — Proteção de Dados](04-protecao-de-dados/protecao-de-dados.md)
 
 * Dynamic Data Masking
 * Row-Level Security
@@ -71,7 +71,7 @@ README.md
 * proteção por linha
 * LGPD / GDPR
 
-## 05 — Auditoria e Monitoramento
+## [05 — Auditoria e Monitoramento](05-auditoria-e-monitoramento/auditoria-e-monitoramento.md)
 
 * SQL Server Audit
 * failed login
@@ -80,7 +80,7 @@ README.md
 * conexões
 * rastreabilidade
 
-## 06 — Segurança de Rede
+## [06 — Segurança de Rede](06-seguranca-de-rede/seguranca-de-rede.md)
 
 * TLS
 * protocolos
@@ -90,7 +90,7 @@ README.md
 * segmentação
 * hardening de comunicação
 
-## 07 — Segurança de Aplicação
+## [07 — Segurança de Aplicação](07-seguranca-de-aplicacao/seguranca-de-aplicacao.md)
 
 * SQL Injection
 * parametrização
@@ -98,7 +98,7 @@ README.md
 * `EXECUTE AS`
 * module signing
 
-## 08 — Segurança de Backup e Restore
+## [08 — Segurança de Backup e Restore](08-segurnaca-de-backup-e-restore/seguranca-de-backup-e-restore.md)
 
 * FULL
 * DIFF
@@ -108,7 +108,7 @@ README.md
 * point in time
 * CHECKSUM
 
-## 09 — Segurança de Instância e Sistema
+## [09 — Segurança de Instância e Sistema](09-seguranda-de-instancia-e-sistema/seguranca-de-instancia-e-sistema.md)
 
 * hardening
 * surface area
@@ -118,7 +118,7 @@ README.md
 * patching
 * gMSA
 
-## 10 — Alta Disponibilidade e Segurança
+## [10 — Alta Disponibilidade e Segurança](10-alta-disponibilidade-e-seguranca/alta-disponibilidade-e-seguranca.md)
 
 * Always On
 * endpoints
@@ -127,7 +127,7 @@ README.md
 * permissões
 * criptografia entre réplicas
 
-## 11 — Governança e Compliance
+## [11 — Governança e Compliance](11-governanca-e-compliance/governanca-e-compliance.md)
 
 * Policy-Based Management
 * LGPD
@@ -137,7 +137,7 @@ README.md
 * classificação de dados
 * evidências
 
-## 12 — Segurança Avançada
+## [12 — Segurança Avançada](12-seguranca-avancada/seguranca-avancada.md)
 
 * Microsoft Defender for SQL
 * Vulnerability Assessment
