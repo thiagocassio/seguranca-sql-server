@@ -13,6 +13,8 @@ Detecção de ameaças e comportamento anômalo.
 * privilege escalation
 * acesso incomum
 
+##
+
 ### 12.2 Vulnerability Assessment
 
 **O que é**
@@ -26,6 +28,8 @@ Scan automatizado de vulnerabilidades.
 * permissões excessivas
 * porta exposta
 * contas inseguras
+
+##
 
 ### 12.3 Script útil de validação
 
