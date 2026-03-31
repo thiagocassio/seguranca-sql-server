@@ -19,13 +19,13 @@ Define o que o usuário pode fazer após autenticar.
 ### GRANT (conceder)
 
 ```sql
-GRANT SELECT ON dbo.Cliente TO usuario_sql;
+GRANT SELECT ON dbo.Tabela TO usuario_sql;
 ```
 
 ### DENY (negar explicitamente)
 
 ```sql
-DENY SELECT ON dbo.Cliente TO usuario_sql;
+DENY SELECT ON dbo.Tabela TO usuario_sql;
 ```
 
 > `DENY` sobrescreve `GRANT`.
@@ -33,33 +33,33 @@ DENY SELECT ON dbo.Cliente TO usuario_sql;
 ### REVOKE (remover permissão)
 
 ```sql
-REVOKE SELECT ON dbo.Cliente FROM usuario_sql;
+REVOKE SELECT ON dbo.Tabela FROM usuario_sql;
 ```
 
 ##
 
 ## 2.3 Escopos
 
-### Server-level
+### Servidor
 
 ```sql
 GRANT VIEW SERVER STATE TO usuario_sql;
 ```
 
-### Database-level
+### Banco
 
 ```sql
 USE BDTeste;
 GRANT CREATE TABLE TO usuario_sql;
 ```
 
-### Schema-level
+### Schema
 
 ```sql
 GRANT SELECT ON SCHEMA::dbo TO usuario_sql;
 ```
 
-### Object-level
+### Objecto
 
 ```sql
 GRANT SELECT, INSERT ON dbo.Pedido TO usuario_sql;
