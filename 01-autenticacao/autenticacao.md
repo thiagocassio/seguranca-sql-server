@@ -49,6 +49,8 @@ CREATE LOGIN [DOMINIO\usuario] FROM WINDOWS;
 CREATE LOGIN [DOMINIO\DBA] FROM WINDOWS;
 ```
 
+##
+
 ### Criar login SQL
 
 ```sql
@@ -68,6 +70,8 @@ Aplica regras do Windows:
 * expiração
 * histórico
 
+##
+
 ### Como fazer
 
 ```sql
@@ -76,6 +80,8 @@ WITH PASSWORD = 'SenhaForte123!',
 CHECK_POLICY = ON,
 CHECK_EXPIRATION = ON;
 ```
+
+##
 
 ### Como conferir logins
 
@@ -89,6 +95,8 @@ WHERE type IN ('S','U','G');
 1 = login desabilitado
 
 0 = login habilitado
+
+##
 
 ### Legenda coluna Type:
 - S = SQL Login
@@ -109,6 +117,8 @@ Grupo do Active Directory
 
 Ex.: DOMINIO\DBA_SQL
 
+##
+
 ### Testar login
 
 ```sql
@@ -125,6 +135,8 @@ REVERT;
 
 O login acessa a instância, mas precisa de USER para acessar o banco.
 
+##
+
 ### Como fazer
 
 ```sql
@@ -132,12 +144,16 @@ USE BDTeste;
 CREATE USER usuario_sql FOR LOGIN usuario_sql;
 ```
 
+##
+
 ### Como conferir usuários do banco
 
 ```sql
 SELECT name, type_desc
 FROM sys.database_principals;
 ```
+
+##
 
 ### Erro comum
 
