@@ -98,7 +98,7 @@ README.md
 * `EXECUTE AS`
 * module signing
 
-## [08 — Segurança de Backup e Restore](08-seguranca-de-backup-e-restore/seguranca-de-backup-e-restore.md)
+## [08 — Segurança de Backup e Restore](08-backup-e-restore/backup-e-restore.md)
 
 * FULL
 * DIFF
