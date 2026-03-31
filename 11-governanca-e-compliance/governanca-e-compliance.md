@@ -1,10 +1,10 @@
 ## 11. GOVERNANÇA E COMPLIANCE
 
-### 11.1 O que é
+### O que é
 
 Segurança voltada para política, norma e evidência.
 
-### 11.2 Policy-Based Management
+### 11.1 Policy-Based Management
 
 ```sql
 SELECT *
@@ -12,7 +12,7 @@ FROM msdb.dbo.syspolicy_policies;
 ```
 ##
 
-### 11.3 Frameworks
+### 11.2 Frameworks
 
 * LGPD
 * GDPR
@@ -22,7 +22,7 @@ FROM msdb.dbo.syspolicy_policies;
 
 ##
 
-### 11.4 Dados sensíveis
+### 11.3 Dados sensíveis
 
 Combinar:
 
