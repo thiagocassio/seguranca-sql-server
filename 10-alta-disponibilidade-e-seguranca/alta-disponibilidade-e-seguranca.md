@@ -1,12 +1,12 @@
 ## 10. ALTA DISPONIBILIDADE E SEGURANÇA
 
-### 10.1 O que é
+### O que é
 
 Garantir disponibilidade sem comprometer autenticação, criptografia e permissões.
 
 ##
 
-### 10.2 Always On
+### 10.1 Always On
 
 ```sql
 SELECT name, role_desc, connection_auth_desc, encryption_algorithm_desc
@@ -20,7 +20,7 @@ FROM sys.dm_hadr_availability_replica_states;
 
 ##
 
-### 10.3 Replicação
+### 10.2 Replicação
 
 ```sql
 SELECT name
@@ -30,7 +30,7 @@ WHERE name LIKE '%Replication%';
 
 ##
 
-### 10.4 Cuidados
+### 10.3 Cuidados
 
 * endpoint protegido
 * listener interno
