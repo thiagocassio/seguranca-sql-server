@@ -87,19 +87,26 @@ WHERE type IN ('S','U','G');
 
 ### Na coluna is_disabled:
 1 = login desabilitado
+
 0 = login habilitado
 
 ### Legenda coluna Type:
 - S = SQL Login
+  
 Login criado dentro do próprio SQL Server
+
 Ex.: app_user, etl_login, sa
 
 - U = Windows Login
+
 Usuário individual do AD/Windows
+
 Ex.: DOMINIO\thiago
 
 - G = Windows Group
+
 Grupo do Active Directory
+
 Ex.: DOMINIO\DBA_SQL
 
 ### Testar login
