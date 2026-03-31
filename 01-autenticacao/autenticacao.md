@@ -49,7 +49,6 @@ CREATE LOGIN [DOMINIO\usuario] FROM WINDOWS;
 CREATE LOGIN [DOMINIO\DBA] FROM WINDOWS;
 ```
 
-##
 
 ### Criar login SQL
 
@@ -96,28 +95,20 @@ WHERE type IN ('S','U','G');
 
 0 = login habilitado
 
-##
 
 ### Legenda coluna Type:
-- S = SQL Login
-  
-Login criado dentro do próprio SQL Server
+- S = SQL Login (Login criado dentro do próprio SQL Server)
 
 Ex.: app_user, etl_login, sa
 
-- U = Windows Login
-
-Usuário individual do AD/Windows
+- U = Windows Login (Usuário individual do AD/Windows)
 
 Ex.: DOMINIO\thiago
 
-- G = Windows Group
-
-Grupo do Active Directory
+- G = Windows Group (Grupo do Active Directory) 
 
 Ex.: DOMINIO\DBA_SQL
 
-##
 
 ### Testar login
 
@@ -135,7 +126,6 @@ REVERT;
 
 O login acessa a instância, mas precisa de USER para acessar o banco.
 
-##
 
 ### Como fazer
 
@@ -144,16 +134,12 @@ USE BDTeste;
 CREATE USER usuario_sql FOR LOGIN usuario_sql;
 ```
 
-##
-
 ### Como conferir usuários do banco
 
 ```sql
 SELECT name, type_desc
 FROM sys.database_principals;
 ```
-
-##
 
 ### Erro comum
 
