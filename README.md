@@ -6,17 +6,17 @@ Este repositório foi criado como um \*\*guia prático de estudos e consulta rá
 
 
 
-\* revisão para certificações Microsoft
+* revisão para certificações Microsoft
 
-\* uso no dia a dia como DBA
+* uso no dia a dia como DBA
 
-\* troubleshooting e incidentes
+* troubleshooting e incidentes
 
-\* hardening de instâncias
+* hardening de instâncias
 
-\* auditoria e compliance
+* auditoria e compliance
 
-\* scripts prontos para validação
+* scripts prontos para validação
 
 
 
@@ -24,11 +24,11 @@ A proposta é manter o conteúdo \*\*organizado por tópicos\*\*, com \*\*uma pa
 
 
 
-\---
+---
 
 
 
-\# Estrutura do Repositório
+# Estrutura do Repositório
 
 
 
@@ -68,39 +68,39 @@ README.md
 
 
 
-\# Conteúdo por Tópico
+# Conteúdo por Tópico
 
 
 
-\## 01 — Autenticação
+## 01 — Autenticação
 
 
 
-\* Windows Authentication
+* Windows Authentication
 
-\* SQL Login
+* SQL Login
 
-\* Mixed Mode
+* Mixed Mode
 
-\* criação de logins
+* criação de logins
 
-\* políticas de senha
+* políticas de senha
 
-\* mapeamento login → user
+* mapeamento login → user
 
-\* validação com `EXECUTE AS`
-
-
-
-\## 02 — Autorização
+* validação com `EXECUTE AS`
 
 
 
-\* GRANT / DENY / REVOKE
+## 02 — Autorização
 
-\* permissões por escopo
 
-\* roles
+
+* GRANT / DENY / REVOKE
+
+* permissões por escopo
+
+* roles
 
 \* roles customizadas
 
