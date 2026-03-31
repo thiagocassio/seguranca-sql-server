@@ -1,6 +1,6 @@
 # Segurança no SQL Server — Guia de Estudos e Consulta para DBA
 
-Este repositório foi criado como um \*\*guia prático de estudos e consulta rápida sobre Segurança no SQL Server\*\*, com foco em:
+Este repositório foi criado como um **guia prático de estudos e consulta rápida sobre Segurança no SQL Server**, com foco em:
 
 * revisão para certificações Microsoft
 * uso no dia a dia como DBA
@@ -9,25 +9,25 @@ Este repositório foi criado como um \*\*guia prático de estudos e consulta rá
 * auditoria e compliance
 * scripts prontos para validação
 
-A proposta é manter o conteúdo \*\*organizado por tópicos\*\*, com \*\*uma pasta para cada tema\*\*, facilitando estudo, busca rápida e evolução contínua.
+A proposta é manter o conteúdo **organizado por tópicos**, com **uma pasta para cada tema**, facilitando estudo, busca rápida e evolução contínua.
 
 ---
 
 # Estrutura do Repositório
 
 ```text
-/01-autenticacao
-/02-autorizacao
-/03-criptografia
-/04-protecao-de-dados
-/05-auditoria-e-monitoramento
-/06-seguranca-de-rede
-/07-seguranca-de-aplicacao
-/08-backup-e-restore
-/09-seguranca-de-instancia-e-sistema
-/10-alta-disponibilidade-e-seguranca
-/11-governanca-e-compliance
-/12-seguranca-avancada
+01-autenticacao
+02-autorizacao
+03-criptografia
+04-protecao-de-dados
+05-auditoria-e-monitoramento
+06-seguranca-de-rede
+07-seguranca-de-aplicacao
+08-backup-e-restore
+09-seguranca-de-instancia-e-sistema
+10-alta-disponibilidade-e-seguranca
+11-governanca-e-compliance
+12-seguranca-avancada
 README.md
 ```
 
@@ -151,7 +151,7 @@ README.md
 
 ## Estudo
 
-Leia um tópico por vez e execute os scripts em laboratório.
+Leia um tópico por vez e execute os scripts se necessário.
 
 ## Consulta rápida
 
@@ -183,7 +183,7 @@ Este material é ideal para:
 
 # Objetivo do Repositório
 
-O objetivo não é ser um material acadêmico, e sim um \*\*guia direto, prático e reutilizável\*\*, que ajude a:
+O objetivo não é ser um material acadêmico, e sim um **guia direto, prático e reutilizável**, que ajude a:
 
 * reduzir tempo de troubleshooting
 * padronizar boas práticas
