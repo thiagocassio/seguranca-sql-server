@@ -31,8 +31,8 @@ SELECT SERVERPROPERTY('IsIntegratedSecurityOnly') AS ApenasWindows;
 
 **Resultado**
 
-* `1` = Apenas Windows
-* `0` = Mixed Mode
+* `1` = Apenas Windows (ideal)
+* `0` = Mixed Mode (revisar a necessidade)
 
 ##
 
