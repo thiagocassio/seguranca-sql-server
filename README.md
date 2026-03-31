@@ -98,7 +98,7 @@ README.md
 * `EXECUTE AS`
 * module signing
 
-## [08 — Segurança de Backup e Restore](08-segurnaca-de-backup-e-restore/seguranca-de-backup-e-restore.md)
+## [08 — Segurança de Backup e Restore](08-seguranca-de-backup-e-restore/seguranca-de-backup-e-restore.md)
 
 * FULL
 * DIFF
@@ -108,7 +108,7 @@ README.md
 * point in time
 * CHECKSUM
 
-## [09 — Segurança de Instância e Sistema](09-seguranda-de-instancia-e-sistema/seguranca-de-instancia-e-sistema.md)
+## [09 — Segurança de Instância e Sistema](09-seguranca-de-instancia-e-sistema/seguranca-de-instancia-e-sistema.md)
 
 * hardening
 * surface area
