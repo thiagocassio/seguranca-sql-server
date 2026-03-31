@@ -16,13 +16,13 @@ Define o que o usuário pode fazer após autenticar.
 
 ## 2.3 Permissões
 
-### GRANT
+### GRANT (conceder)
 
 ```sql
 GRANT SELECT ON dbo.Cliente TO usuario_sql;
 ```
 
-### DENY
+### DENY (negar explicitamente)
 
 ```sql
 DENY SELECT ON dbo.Cliente TO usuario_sql;
@@ -30,7 +30,7 @@ DENY SELECT ON dbo.Cliente TO usuario_sql;
 
 > `DENY` sobrescreve `GRANT`.
 
-### REVOKE
+### REVOKE (remover permissão)
 
 ```sql
 REVOKE SELECT ON dbo.Cliente FROM usuario_sql;
