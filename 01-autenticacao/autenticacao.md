@@ -68,8 +68,6 @@ Aplica regras do Windows:
 * expiração
 * histórico
 
-##
-
 ### Como fazer
 
 ```sql
