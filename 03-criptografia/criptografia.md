@@ -149,6 +149,18 @@ FROM sys.certificates;
 
 ##
 
+## 3.5 Backup criptografado (usando a chave criada no tópico 3.1)
+```sql
+BACKUP DATABASE BDTeste
+TO DISK = 'D:\Backup\BDTeste_ENC.bak'
+WITH ENCRYPTION (
+    ALGORITHM = AES_256,
+    SERVER CERTIFICATE Cert_TDE
+);
+```
+
+##
+
 ## Resumo
 
 * TDE protege arquivos
