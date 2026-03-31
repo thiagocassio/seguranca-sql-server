@@ -107,6 +107,13 @@ JOIN sys.database_principals dp
 WHERE dp.name = 'usuario_sql';
 ```
 
+Perguntas críticas:
+- permissão excessiva?
+- grant direto?
+- fornecedor ainda ativo?
+- conta de app com DDL?
+- BI com DELETE?
+
 ##
 
 ## 2.6 Ver roles
@@ -123,6 +130,11 @@ JOIN sys.database_principals dr
 WHERE dp.name = 'usuario_sql';
 ```
 
+Foco em:
+- db_owner
+- db_securityadmin
+- db_ddladmin
+
 ##
 
 ## 2.7 Testar acesso efetivo
@@ -133,6 +145,15 @@ SELECT USER_NAME();
 SELECT HAS_PERMS_BY_NAME('dbo.Cliente', 'OBJECT', 'SELECT');
 REVERT;
 ```
+
+Porque às vezes:
+- herdou role
+- recebeu DENY
+- está via grupo AD
+- está via schema
+
+O acesso real nem sempre é o aparente.
+
 
 ##
 
