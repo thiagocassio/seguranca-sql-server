@@ -1,4 +1,4 @@
-\# Segurança no SQL Server — Guia de Estudos e Consulta para DBA
+# Segurança no SQL Server — Guia de Estudos e Consulta para DBA
 
 
 
